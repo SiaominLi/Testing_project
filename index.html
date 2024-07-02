@@ -222,10 +222,7 @@
         {% endfor %}
     </div>
     <button id="evaluate-btn">Evaluate</button>
-    <script>
-        document.getElementById('evaluate-btn').addEventListener('click', () => appier('event', 'product_viewed', {'product_id': 'E0238','product_name': 'Brand A Computer', 'category': 'electronics'}));
-        // appier('event', 'product_viewed', {'product_id': 'E0238','product_name': 'Brand A Computer', 'category': 'electronics'});
-    </script>
+    <button id="evaluate-btn" onclick="appier('event', 'product_viewed', {'category': 'evaluate'})">Evaluate</button>
     <div id="grid-with-arrows"></div>
     <div id="results"></div>
     <div id="value-function-grid"></div>
