@@ -117,7 +117,7 @@
         var startCell = null;
         var endCell = null;
         var obstacleCells = [];
-
+        
         function setPoint(event, row, col) {
             var cell = event.target;
             if (!startSet) {
@@ -161,6 +161,18 @@
 
             updateGrid();  // 開始執行格子更新
         }
+
+        !function(q,g,r,a,p,h,js) {
+            q.appier=q.qg;
+            if(q.qg)return;
+            js=q.appier=q.qg=function() {
+            js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
+            };
+            js.queue=[];
+            p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
+            h.parentNode.insertBefore(p,h);
+        } (window,document,'script','https://cdn.qgr.ph/qgraph.de5cc3f9b0b741c128c3.js');
+        
         function evaluate() {
             var gridData = [];
             for (var i = 0; i < n; i++) {
